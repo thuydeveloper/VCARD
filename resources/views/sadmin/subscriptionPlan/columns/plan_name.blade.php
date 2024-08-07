@@ -1,0 +1,1 @@
+{!! $row->plan->name !!}

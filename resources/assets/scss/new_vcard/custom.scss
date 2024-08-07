@@ -1,0 +1,438 @@
+.px-30 {
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+@media(max-width: 575px) {
+    .px-30 {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.fs-14 {
+    font-size: 14px
+}
+
+.fs-18 {
+    font-size: 18px
+}
+
+@media(max-width: 575px) {
+    .fs-18 {
+        font-size: 16px
+    }
+}
+
+.fs-20 {
+    font-size: 20px
+}
+
+.mt-10 {
+    margin-top: 10px
+}
+
+.mb-40 {
+    margin-bottom: 40px
+}
+
+@media(max-width: 575px) {
+    .mb-40 {
+        margin-bottom: 30px
+    }
+}
+
+.mx-30 {
+    margin-left: 30px;
+    margin-right: 30px
+}
+
+@media(max-width: 575px) {
+    .mx-30 {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+}
+
+
+.mb-10 {
+    margin-bottom: 10px
+}
+
+.pb-50 {
+    padding-bottom: 50px
+}
+
+@media(max-width: 575px) {
+    .pb-50 {
+        padding-bottom: 40px
+    }
+}
+
+.pt-40 {
+    padding-top: 40px
+}
+
+@media(max-width: 575px) {
+    .pt-40 {
+        padding-top: 25px
+    }
+}
+
+.pb-40 {
+    padding-bottom: 40px
+}
+
+@media(max-width: 575px) {
+    .pb-40 {
+        padding-bottom: 25px
+    }
+}
+
+.pt-60 {
+    padding-top: 60px
+}
+
+@media(max-width: 575px) {
+    .pt-60 {
+        padding-top: 40px
+    }
+}
+
+.pb-60 {
+    padding-bottom: 60px
+}
+
+@media(max-width: 575px) {
+    .pb-60 {
+        padding-bottom: 40px
+    }
+}
+
+.pt-30 {
+    padding-top: 30px
+}
+
+@media(max-width: 575px) {
+    .pt-30 {
+        padding-top: 20px
+    }
+}
+
+.pb-30 {
+    padding-bottom: 30px
+}
+
+@media(max-width: 575px) {
+    .pb-30 {
+        padding-bottom: 20px
+    }
+}
+
+.pt-50 {
+    padding-top: 50px
+}
+
+@media(max-width: 575px) {
+    .pt-50 {
+        padding-top: 40px
+    }
+}
+
+.pt-80 {
+    padding-top: 80px
+}
+
+@media(max-width: 575px) {
+    .pt-80 {
+        padding-top: 40px
+    }
+}
+
+.pb-80 {
+    padding-bottom: 80px
+}
+
+@media(max-width: 575px) {
+    .pb-80 {
+        padding-bottom: 40px
+    }
+}
+
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+.fw-5 {
+    font-weight: 500
+}
+
+.fw-6 {
+    font-weight: 600
+}
+
+.fw-7 {
+    font-weight: 700
+}
+
+.fs-12 {
+    font-size: 12px
+}
+
+.fs-36 {
+    font-size: 36px
+}
+
+@media(max-width: 575px) {
+    .fs-36 {
+        font-size: 30px
+    }
+}
+
+.fs-30 {
+    font-size: 30px
+}
+
+@media(max-width: 575px) {
+    .fs-30 {
+        font-size: 28px
+    }
+}
+
+.fs-28 {
+    font-size: 28px
+}
+
+@media(max-width: 575px) {
+    .fs-28 {
+        font-size: 24px
+    }
+}
+
+a {
+    text-decoration: none
+}
+
+.main-content {
+    max-width: 576px;
+    min-height: 100vh
+}
+
+.object-fit-cover {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.flex-1 {
+    flex: 1
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.btn-section {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    z-index: 9
+}
+.btn-section-left{
+    position: absolute;
+    top: 50%;
+    left: 15px !important;
+    z-index: 9;
+}
+.btn-section .fixed-btn-section {
+    position: fixed;
+    top: 50%;
+    display: flex;
+    align-items: center
+}
+
+.btn-section .fixed-btn-section .bars-btn {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.vcard-bars-btn-left {
+    z-index: 9 !important;
+    width: 576px;
+    display: flex;
+    justify-content: flex-start !important;
+}
+.vcard-bars-btn-left .bars-btn {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 12px;
+    position: absolute;
+    margin-right: 0.5rem !important;
+    box-shadow: -3px 2px 15px #9e9e9ecc;
+}
+.sub-btn-div-left {
+    position: absolute !important;
+    top: -55px !important;
+    width: 100% !important;
+    left: 75px !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    display: flex !important;
+}
+
+
+.btn-section .fixed-btn-section .sub-btn {
+    position: absolute;
+    right: 75px;
+    display: none
+}
+
+.btn-section .fixed-btn-section .sub-btn .social-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.btn-section .fixed-btn-section .sub-btn .social-btn i {
+    font-size: 24px
+}
+
+.slick-dots li {
+    margin: 0
+}
+
+.slick-dots li button:before {
+    font-size: 30px;
+    opacity: 1
+}
+
+#AppointmentModal {
+    .modal-dialog {
+        pointer-events: none;
+        position: relative;
+        width: auto;
+        margin: 0.5rem;
+
+        @media (min-width:576px) {
+            margin: 2.5rem auto;
+            max-width: 440px;
+        }
+
+        .modal-content {
+            border: none;
+            border-radius: 0.475rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+            outline: 0;
+
+            .modal-header {
+                border-bottom: 1px solid #eff2f5;
+                padding: 22px;
+                position: relative;
+
+                .modal-title {
+                    line-height: 1.5;
+                    margin-bottom: 0;
+                    font-size: 1.125rem;
+                }
+            }
+
+            .modal-body {
+                padding: 1.75rem;
+
+                .form-label {
+                    font-size: .875rem;
+                    margin-bottom: 0.5rem;
+                    color: #343a40;
+                    font-weight: 500;
+                    display: inline-block;
+
+                    &::after {
+                        color: #f62947;
+                        content: "*";
+                        font-size: inherit;
+                        font-weight: 700;
+                        position: relative;
+                    }
+                }
+
+                .form-control {
+                    appearance: none;
+                    background-clip: padding-box;
+                    background-color: #fff;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.313rem;
+                    color: #6c757d;
+                    display: block;
+                    font-size: .875rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding: 0.688rem 0.938rem;
+                    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    width: 100%;
+                }
+            }
+
+            .modal-footer {
+                padding: 1.875rem;
+                align-items: center;
+                border-bottom-left-radius: 0.625rem;
+                border-bottom-right-radius: 0.625rem;
+                border-top: 0 solid #dee2e6;
+                display: flex;
+                flex-shrink: 0;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .btn {
+                    border: 1px solid transparent;
+                    border-radius: 0.313rem !important;
+                    display: inline-block;
+                    font-size: .875rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding: 0.563rem 1.563rem;
+                    text-align: center;
+                    text-decoration: none;
+                    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                    -moz-user-select: none;
+                    user-select: none;
+                    vertical-align: middle;
+                }
+
+                .btn-primary {
+                    background-color: #6571ff !important;
+                    border-color: #6571ff !important;
+                    color: #fff !important;
+                }
+
+                .btn-secondary {
+                    background-color: #adb5bd !important;
+                    border-color: #adb5bd !important;
+                    color: #212529 !important;
+                }
+            }
+        }
+    }
+}
+
+.toast-title {
+    margin-right: 12px;
+ }
+
+
+ .toast-message{
+     margin-right: 12px;
+  }

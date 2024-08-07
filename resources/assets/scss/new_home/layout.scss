@@ -1,0 +1,245 @@
+@import "variables.scss";
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+
+    .navbar {
+        @media (max-width: 991px) {
+            position: static;
+            padding: 0;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                color: $black;
+            }
+        }
+
+        .navbar-toggler {
+            @media (max-width: 991px) {
+                box-shadow: none;
+            }
+        }
+
+        .navbar-collapse {
+            @media (max-width: 991px) {
+                position: absolute;
+                width: 100%;
+                top: 100%;
+                background: $white;
+                left: 0px;
+                right: 0px;
+                margin: auto;
+                max-width: 720px;
+                border-radius: 10px;
+                box-shadow: 0 5px 20px #8957fa45;
+            }
+
+            @media (max-width: 767px) and (min-width: 576px) {
+                max-width: 516px;
+            }
+
+            @media (max-width: 575px) {
+                width: calc(100% - 24px);
+            }
+
+            .navbar-nav {
+                @media (max-width: 991px) {
+                    padding: 15px 10px 15px 10px;
+                }
+
+                .nav-item {
+                    padding: 0 20px;
+
+                    @media (max-width: 991px) {
+                        padding: 0 10px;
+                    }
+
+                    .nav-link {
+                        font-weight: 500;
+                        padding: 0.5rem 0;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        height: 26px;
+        width: 26px;
+        position: relative;
+        margin: auto;
+        cursor: pointer;
+        border: none;
+
+        .navbar-toggler-icon {
+            position: absolute;
+            height: 2px;
+            background-color: $white;
+            width: 24px;
+            display: block;
+            border-radius: 2px;
+            transition: 0.35s ease all;
+            background-image: none !important;
+        }
+
+        .top-bar {
+            top: 0px;
+            @media (max-width: 575px) {
+                background-color: black !important;
+            }
+        }
+
+        .middle-bar {
+            top: 7px;
+            opacity: 1;
+            @media (max-width: 575px) {
+                background-color: black !important;
+            }
+        }
+
+        .bottom-bar {
+            top: 14px;
+            @media (max-width: 575px) {
+                background-color: black !important;
+            }
+        }
+
+        &.open {
+            .top-bar {
+                top: 7px;
+                transform: rotate(225deg);
+            }
+
+            .middle-bar {
+                opacity: 0;
+                width: 0%;
+                transform-origin: left center;
+                transition: 0.175s ease all;
+            }
+
+            .bottom-bar {
+                top: 7px;
+                transform: rotate(-225deg);
+            }
+        }
+    }
+
+    .navbar-brand {
+        display: block;
+        width: auto;
+        height: 50px;
+        max-width: 100%;
+    }
+
+    .dropdown {
+        .dropdown-menu {
+            li {
+                .nav-link {
+                    color: $black !important;
+
+                    &:hover,
+                    &:focus,
+                    &.active,
+                    &:active {
+                        color: $primary !important;
+                    }
+
+                    img {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+
+        .dropdown-toggle {
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 0;
+            box-shadow: none;
+            color: $black;
+
+            &:after {
+                border: 0;
+                margin-left: 10px;
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                -webkit-font-smoothing: antialiased;
+                display: var(--fa-display, inline-block);
+                content: "\f107";
+                vertical-align: middle;
+            }
+        }
+
+        .dropdown-item {
+            padding: 8px 25px;
+
+            &:hover,
+            &:focus {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+footer {
+    .email {
+        position: relative;
+
+        input {
+            background-color: $white;
+            border: none;
+            height: 63px;
+            padding: 20px 162px 20px 20px;
+
+            @media (max-width: 575px) {
+                padding: 20px;
+                height: 55px;
+            }
+
+            &::placeholder {
+                color: $gray-100;
+            }
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+
+        .subscribe-btn {
+            height: 43px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            @media (max-width: 575px) {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .footer-img {
+        max-height: 350px;
+        max-width: 100%;
+        width: auto;
+    }
+}
+
+.footer-section {
+    height: 488px;
+}

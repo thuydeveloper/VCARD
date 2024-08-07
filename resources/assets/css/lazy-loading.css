@@ -1,0 +1,353 @@
+/* .container {
+    height: 100vh;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box {
+    max-width: 300px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.skeleton {
+    padding: 15px;
+    /* max-width: 300px; */
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14),
+        0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+}
+
+.skeleton .square {
+    height: 40px;
+    border-radius: 5px;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(8%, rgba(130, 130, 130, 0.2)),
+        color-stop(18%, rgba(130, 130, 130, 0.3)),
+        color-stop(33%, rgba(130, 130, 130, 0.2))
+    );
+    background: linear-gradient(
+        to right,
+        rgba(130, 130, 130, 0.2) 8%,
+        rgba(130, 130, 130, 0.3) 18%,
+        rgba(130, 130, 130, 0.2) 33%
+    );
+    background-size: 800px 100px;
+    animation: wave-squares 2s infinite ease-out;
+}
+.total-box {
+    height: 80px !important;
+    width: 80px !important;
+}
+.vcard-box {
+         height: 230px !important;
+         width:  auto;
+     }
+.skeleton .line {
+    height: 12px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    background: rgba(130, 130, 130, 0.2);
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(8%, rgba(130, 130, 130, 0.2)),
+        color-stop(18%, rgba(130, 130, 130, 0.3)),
+        color-stop(33%, rgba(130, 130, 130, 0.2))
+    );
+    background: linear-gradient(
+        to right,
+        rgba(130, 130, 130, 0.2) 8%,
+        rgba(130, 130, 130, 0.3) 18%,
+        rgba(130, 130, 130, 0.2) 33%
+    );
+    background-size: 800px 100px;
+    animation: wave-lines 2s infinite;
+}
+
+.skeleton-right {
+    flex: 1;
+}
+
+.skeleton-left {
+    flex: 2;
+    /* padding-right: 15px; */
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.skeleton .line:last-child {
+    margin-bottom: 0;
+}
+
+.h8 {
+    height: 8px !important;
+}
+
+.h10 {
+    height: 10px !important;
+}
+
+.h12 {
+    height: 12px !important;
+}
+
+.h15 {
+    height: 15px !important;
+}
+
+.h17 {
+    height: 17px !important;
+}
+.h35 {
+    height: 35px !important;
+}
+
+.h20 {
+    height: 20px !important;
+    text-align: end;
+}
+
+.h25 {
+    height: 25px !important;
+}
+
+.w25 {
+    width: 25% !important;
+}
+
+.w40 {
+    width: 40% !important;
+}
+
+.w50 {
+    width: 50% !important;
+}
+
+.w75 {
+    width: 75% !important;
+}
+
+.m10 {
+    margin-bottom: 10px !important;
+}
+
+.circle {
+    border-radius: 50% !important;
+    height: 80px !important;
+    width: 80px;
+}
+
+@keyframes wave-lines {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+@keyframes wave-squares {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.skeleton-loader {
+    border-bottom: solid 1px lightgrey;
+    padding: 15px 10px;
+}
+
+.skeleton-loader .skeleton-1,
+.skeleton-loader .skeleton-2,
+.skeleton-loader .skeleton-3 {
+    float: left;
+    height: 10px;
+    animation: skeleton-loader-shimmer 1s linear infinite forwards;
+    background: #eee;
+    background-image: gradient(
+        linear,
+        left center,
+        right center,
+        from(#333),
+        color-stop(0.2, #333),
+        color-stop(0.4, #333),
+        to(#333)
+    );
+    background-image: linear-gradient(
+        to right,
+        #eee 0%,
+        #ccc 20%,
+        #ddd 40%,
+        #eee 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 800px 104px;
+    border-radius: 3px;
+}
+
+.skeleton-loader .skeleton-1:not(:first-child),
+.skeleton-loader .skeleton-2:not(:first-child),
+.skeleton-loader .skeleton-3:not(:first-child) {
+    margin: 10px 10px 0 0;
+}
+
+.skeleton-loader .skeleton-1 {
+    width: 80%;
+}
+
+.skeleton-loader .skeleton-2 {
+    width: 50%;
+    clear: both;
+}
+
+.skeleton-loader .skeleton-3 {
+    width: 20%;
+}
+
+@keyframes skeleton-loader-shimmer {
+    0% {
+        background-position: -468px 0;
+    }
+
+    100% {
+        background-position: 468px 0;
+    }
+}
+
+.listing-skeleton {
+    .card {
+        height: 750px;
+    }
+
+    .pulsate {
+        background: linear-gradient(90deg, #dddddd, #f0f0f0, #dddddd, #f0f0f0);
+        background-size: 400% 400%;
+        animation: skeleton-loader-shimmer 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .card-content {
+        clear: both;
+        box-sizing: border-box;
+        padding: 16px;
+        background: #fff;
+    }
+
+    .search-box {
+        width: 300px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .date-box {
+        width: 220px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .filter-box {
+        width: 50px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .export-box {
+        width: 110px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .event-box {
+        height: 210px;
+        margin-bottom: 28px;
+    }
+
+    .add-button-box {
+        width: 140px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .add-button-box-filter {
+        width: 50px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 5px;
+    }
+
+    .column-box {
+        height: 45px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    @-webkit-keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @-moz-keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes Gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}

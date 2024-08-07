@@ -1,0 +1,226 @@
+.img-box > input {
+    display: none;
+}
+
+.template-border {
+    border: 3px solid #0b9ef7 !important;
+    border-radius: 10px !important;
+}
+
+.btn-check {
+    &:focus+.btn {
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}
+.btn {
+    &:focus {
+        outline: unset !important;
+        box-shadow:  unset !important;
+    }
+}
+
+.screen.image {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: top;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: left;
+        }
+    }
+}
+
+.screen.vcard_11 {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: left;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: right;
+        }
+    }
+}
+
+
+.img-radio .screen.vcard_11 {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: left;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: right;
+        }
+    }
+}
+
+.img-radio {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+    position:relative !important;
+
+    img {
+        width: 100%;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: top;
+        height: 400px;
+        transition: 5s all ease;
+    }
+    &::after {
+        position:absolute;
+        width:100%;
+        height:100%;
+        content:"";
+        top:0;
+        left:0;
+        background-color: #eff3f6a6;
+        opacity:0;
+    }
+
+    &:hover {
+        &::after {
+            opacity:1;
+        }
+    }
+
+    &:hover {
+        img {
+            object-position: left;
+        }
+    }
+}
+
+.img-radio.img-border {
+    border: 3px solid #0b9ef7 !important;
+    border-radius: 10px !important;
+    position: relative;
+
+
+    &::before {
+        position:absolute;
+        color:black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size:25px !important;
+       font-weight:500;
+       height:100%;
+       width:100%;
+       opacity:1;
+       z-index:999;
+    }
+    &::after {
+        opacity:1;
+    }
+
+}
+
+.templatecard{
+    width: 20%!important;
+}
+
+@media (max-width: 1700px) {
+    .templatecard{
+        width: 25%!important;
+    }
+}
+
+@media (max-width: 1400px) {
+    .templatecard{
+        width: 33.33%!important;
+    }
+}
+
+@media (max-width: 768px) {
+    .templatecard{
+        width: 50%!important;
+    }
+}
+
+@media (max-width: 501px) {
+    .templatecard{
+        width: 100%!important;
+    }
+}
+
+  .ribbon-wrapper {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: 4px !important;
+    left: 5px !important;
+    .ribbon {
+      color: #333;
+      text-align: center;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform:    rotate(-45deg);
+      -ms-transform:     rotate(-45deg);
+      -o-transform:      rotate(-45deg);
+      position: relative;
+      padding: 7px 0;
+      top: 15px;
+      left: -30px;
+      width: 120px;
+      background-color: #3498db;
+      color: #fff;
+      font-size: 10px !important;
+    }
+  }
+

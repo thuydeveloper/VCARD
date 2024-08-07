@@ -1,0 +1,719 @@
+//color variable
+$primary: #3A4151;
+$white: #fff;
+$red: #FB5253;
+$bg-color: #EDF2F8;
+$yellow: #FFCA2C;
+$grey: #969696;
+$dark: #010101;
+$green: rgb(24, 183, 24);
+.mb-20px {
+    margin-bottom: 20px;
+}
+.ms-20px {
+    margin-left:20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-blur {
+    filter: blur(5px);
+}
+.whitespace-nowrap {
+    white-space: nowrap !important;
+}
+.btn-group {
+    //width:150px;
+    height:38px;
+    border-radius:50px;
+    overflow:hidden;
+
+}
+.vcard-btn-group {
+    width: 50px;
+    height: 50px;
+    color: #fb5253;
+    border: 1px solid #fb5253;
+    background-color: white;
+    border-radius: 50px !important;
+}
+.sticky-vcard-div {
+    position:fixed;
+    bottom:18px;
+    left:0;
+    z-index:9999;
+}
+
+.sticky-vcard4-div {
+         bottom:62px !important;
+     }
+.sticky-vcard12-div {
+         bottom:66px !important;
+     }
+.modal {
+    z-index:99999 !important;
+    background-color: #00000080;
+    .modal-dialog {
+        .modal-content {
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+            border: none;
+            border-radius: 0.475rem;
+            outline: 0;
+
+            .modal-header {
+                padding: 22px;
+                border-bottom: 1px solid #eff2f5;
+            }
+
+            .modal-body {
+                padding: 1.75rem;
+                .required {
+                    &:after {
+                        color: #f62947;
+                        content: "*";
+                        font-size: inherit;
+                        font-weight: 700;
+                        position: relative;
+                    }
+                }
+
+                .input-box {
+                    background-color: #f5f8fa;
+                    border: unset;
+                    color: #5e6278;
+                    transition: all 0.2s ease;
+                    font-size: 1.1rem;
+                    line-height: 1.5;
+                    padding: 0.75rem 1rem;
+                    border-radius: 0.475rem;
+
+                    &:focus {
+                        box-shadow: unset;
+                        background-color: #eef3f7;
+                    }
+                }
+
+
+            }
+            .modal-footer {
+                padding: 1.875rem;
+                .btn {
+                    padding: 10px 20px !important;
+                    border-radius: 0.475rem !important;
+                }
+                .submit-btn {
+                    background-color: #6571ff!important;
+                    border: unset;
+                    outline: unset;
+                    color:$white;
+                    padding: 10px 20px !important;
+                    margin-top: 26px;
+
+
+                    &:hover {
+                        background-color: #6571ff!important;
+                    }
+
+                    &:focus {
+                        box-shadow: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+.modal[dir="rtl"] {
+    .modal-header {
+        .btn-close {
+            margin: -0.9375rem auto -0.9375rem -0.9375rem !important ;
+        }
+    }
+    .select2-container--bootstrap-5 .select2-selection--single {
+        background-position: left 0.938rem center !important;
+        padding: 0.688rem 0.938rem 0.688rem 2.814rem !important;
+    }
+    .form-check {
+        padding-right: 2.063em !important;
+        padding-left: 0;
+        .form-check-input {
+            float: right;
+            margin-right: -2.063em;
+        }
+    }
+    .ms-3 {
+        margin-right: 0.75rem !important;
+    }
+    .me-0 {
+        margin-left: 0 !important;
+    }
+}
+
+//payment cancel css
+
+.main-payment {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .payment-section {
+        box-shadow: 2px 0 8px 2px #dfdbdb;
+
+        .payment-heading {
+            @media (max-width: 576px) {
+                width: 100%;
+                text-align: center;
+            }
+
+            .payment-title {
+                font-size: 67px;
+                font-weight: bold;
+                color: #f56758;
+
+                @media (max-width: 992px) {
+                    font-size: 55px;
+                }
+                @media (max-width: 668px) {
+                    font-size: 45px;
+                }
+            }
+
+            .payment-text {
+                font-size: 30px;
+                color: #595957;
+                font-weight: 600;
+
+                @media (max-width: 992px) {
+                    font-size: 25px;
+                }
+                @media (max-width: 668px) {
+                    font-size: 20px;
+                }
+            }
+
+            .payment-btn {
+                background: #f68880;
+                color: white;
+            }
+        }
+    }
+}
+
+//payment success
+.main-payment-success {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .payment-head {
+        padding: 50px;
+        box-shadow: 2px 0 8px 2px #ededed;
+        border-radius: 10px;
+        background: #fafcff;
+
+        @media (max-width: 455px) {
+            padding: 20px;
+        }
+
+        .payment-details {
+            padding: 30px;
+
+            @media (max-width: 350px) {
+                padding: 10px;
+            }
+
+            .payment-info {
+                text-align: center;
+
+                .payment-icon {
+                    font-size: 50px;
+                    color: #46ceac;
+                }
+
+                .payment-title {
+                    color: #46ceac;
+
+                    @media (max-width: 992px) {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        .payment-text {
+            color: #a2a8bb;
+        }
+
+        .payment-img {
+            padding-left: 100px;
+
+            @media (max-width: 768px) {
+                display: none;
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.btn-back {
+    background-color: #46ceac;
+    color: white;
+}
+
+.social-link-modal {
+    display: flex;
+    @media (max-width: 450px) {
+        display: block !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+}
+
+input::placeholder {
+    overflow: visible;
+}
+
+.custom-nav-margin {
+    margin-top: 121px !important
+}
+
+.vcard-11-back {
+    left: 875px !important;
+    top: 51px !important;
+}
+
+.morecontent span {
+    display: none;
+    //font-size: 14px !important;
+    font-weight: 400 !important;
+    -webkit-box-orient: vertical;
+}
+
+.morelink {
+    //display: block;
+    cursor: pointer;
+}
+
+#toast-container > div {
+    min-width: 400px !important;
+    @media (max-width: 575px) {
+        min-width: 300px !important;
+    }
+}
+.lightbox {
+    display:flex;
+    flex-direction: column-reverse;
+}
+.lb-data .lb-number {
+    padding-bottom:0 !important;
+    padding-top:1rem;
+}
+
+// share to direct whatsapp css
+#wpNumber::-webkit-inner-spin-button{
+    display: none;
+}
+
+#wpNumber{
+    height: 30px;
+}
+.wp-number-container{
+    position: fixed;
+    // bottom: 65px;
+    z-index: 999999;
+    // @media (max-width:576px) {
+    //     top:50%;
+    //     right: 180px;
+    // }
+}
+
+// .wrapper {
+//     background-color: #FFF;
+//     border-radius: 2px;
+//     box-shadow: 0px 2px 1px 0px #DDD;
+//     box-sizing: border-box;
+//     height: 300px;
+//     left: 50%;
+//     margin: -150px 0 0 -150px;
+//     position: absolute;
+//     top: 50%;
+//     width: 300px;
+//   }
+
+
+.input {
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+    right: 132% !important;
+    top: -182px  !important;
+    width: 160px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.input::-webkit-input-placeholder {
+color: #AAA;
+}
+
+.input:focus::-webkit-input-placeholder {
+color: $grey;
+}
+
+.input:focus+.underline {
+transform: scale(1);
+}
+
+.underline {
+    // background-color: $red;
+    display: inline-block;
+    height: 2px;
+    // left: 81px;
+    right:238px;
+    margin-top: -4px;
+    position: absolute;
+    top: -139px;
+    transform: scale(0, 1);
+    // transition: all 0.5s linear;
+    width: 132px;
+    // @media (max-width:576px) {
+    //     top: 42.5px;
+    // }
+}
+.share-wp-btn-div {
+    width: 40px;
+    height:40px;
+    position: absolute;
+    // left: 120%;
+    right: 5px;
+    top: 5px;
+    // @media (min-width:1199px) {
+    //     right:93%;
+    // }
+
+    .share-wp-btn {
+        width: 40px;
+        height: 40px;
+        font-size:18px;
+
+    }
+}
+.vcard-wp-btn {
+    background-color: $green !important;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+
+
+//     @media (max-width:576px) {
+
+//         position: fixed;
+//         right: 0;
+//    top:50%;
+
+//     }
+}
+.vcard11-sticky-btn {
+    position: absolute;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    background-color: $green;
+    top: 50%;
+    z-index:99999;
+    font-size:12px;
+    @media (max-width:1199px) {
+        right:25px;
+    }
+}
+.vcard11-underline {
+    position: absolute;
+    background-color:#fd5479 ;
+    display: inline-block;
+    height: 2px;
+    top: 39px;
+    right: -44px;
+    // left: 81px;
+    // right:238px;
+    // margin-top: 15px;
+    // top: 200px;
+    transform: scale(0, 1);
+    transition: all 0.5s linear;
+    width: 132px;
+    @media (min-width:1199px) {
+right:-63px;
+    }
+}
+.vcard11-input:focus + .vcard11-underline {
+    transform: scale(1) !important;
+}
+.vcard11-send-btn {
+    background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+    width:40px !important;
+    height:40px !important;
+    border-radius:40px;
+    color:white !important;
+    margin-left: 300px !important;
+}
+.vcard11-input{
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid #CCC;
+    color: #555;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 18px;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+    left: 70px !important;
+    top: 0px  !important;
+    width: 160px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    @media (min-width:1199px) {
+        left:88px !important;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+.vcard11-container {
+    position: absolute;
+    top: 50% !important;
+    right: 200px !important;
+    z-index: 999999;
+
+    @media (max-width:1199px) {
+        position: fixed;
+        right: 180px !important;
+    }
+    .input {
+        top:0 !important;
+    }
+    .share-wp-btn-div{
+        top:0 !important;
+    }
+    .underline {
+        top: 42.5px;
+    }
+}
+.vcard-bars-btn{
+z-index:9 !important;
+width:576px;
+display:flex;
+justify-content:flex-end;
+.bars-btn {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 12px;
+    position: absolute;
+    margin-right: 0.5rem!important;
+
+  box-shadow: -3px 2px 15px #9e9e9ecc;
+}
+}
+
+.vcard-bars-btn-left {
+    z-index: 9 !important;
+    width: 576px;
+    display: flex;
+    justify-content: flex-start !important;
+}
+.vcard-bars-btn-left .bars-btn {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    font-size: 12px;
+    position: absolute;
+    margin-right: 0.5rem !important;
+    box-shadow: -3px 2px 15px #9e9e9ecc;
+}
+
+.sub-btn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    left:0;
+    top:0;
+}
+.nav-tabs .dropdown-menu {
+    min-width:200px !important;
+}
+.link-text {
+    font-size:16px !important;
+    font-weight:500;
+
+    @media (max-width:480px) {
+        font-size:14px !important;
+    }
+}
+.modal-backdrop.show
+{
+    z-index:-1 !important;
+}
+.icon-search-container {
+    background-color: white;
+    display: inline-block;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    overflow:hidden;
+    position: relative;
+    transition: width 0.2s ease-out;
+    backface-visibility: hidden;
+
+    &.active {
+      width: 285px;
+      outline: 1px solid green;
+      @media (max-width:425px) {
+        width:260px;
+      }
+@media (max-width:374px) {
+    width:220px;
+}
+@media (max-width:336px) {
+    width:200px;
+}
+.wp-btn {
+    width:40px;
+    height:40px;
+    min-width:40px;
+    font-size:14px;
+    position:relative;
+    top:5px;
+    left:5px;
+}
+      .fa-times-circle {
+        opacity: 1;
+      }
+      .search-input {
+        width: 200px;
+      }
+    }
+
+  .fa-search {
+      color: #2980b9;
+      font-size: 30px;
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      cursor: pointer;
+    }
+    .fa-times-circle {
+      opacity: 0;
+      color: #d9d9d9;
+      font-size: 20px;
+      position: absolute;
+      top: 12px;
+      right: 8px;
+      transition: opacity 0.2s ease-out;
+      cursor: pointer;
+    }
+
+    .search-input {
+      position: absolute;
+      cursor: default;
+      left: 50px;
+    top: 9px;
+      width: 0;
+    //   padding: 5px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      line-height: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      transition: width 0.2s ease-out;
+    }
+
+  }
+.wp-btn {
+    position: relative;
+    z-index: 9;
+    width:50px;
+    height:50px;
+    min-width:50px;
+    border-radius:50%;
+    background-color: $green;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#videobtn{
+background-color: $green;
+border: none;
+}
+
+.sub-btn-div {
+    position: absolute;
+    top:-55px;
+    width: 100%;
+    right: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sub-btn-div-left {
+    position: absolute !important;
+    top: -55px !important;
+    width: 100% !important;
+    left: 75px !important;
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    display: flex !important;
+}
+.stickyIcon{
+    margin-top: 30px;
+}
+.vcard11-icon-container {
+    z-index: 9;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+
+}
+.vcard11-wp-btn {
+    background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+}
+.card11-add-btn{
+   width: 185px !important;
+}
+
+// .audio-container {
+// max-width: 300px;
+// margin: 0 auto;
+// text-align: center;
+// }
+.audio-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+audio {
+    width: 100%;
+}
+.object-fit-cover {
+    object-fit: cover;
+}

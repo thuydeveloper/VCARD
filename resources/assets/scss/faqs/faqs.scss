@@ -1,0 +1,31 @@
+.accordion-button:not(.collapsed){
+    color: #1B1920;;
+    background: none !important;
+}
+.accordion-button:focus{
+z-index: 3;
+border: none !important;
+outline: 0 !important;
+box-shadow: none !important;
+}
+.accordion-body{
+color: #99999A;
+border: none !important;
+}
+.accordion-body:focus-visible {
+ outline: none !important;
+}
+.accordion-item{
+border: 2px solid #D8D8D8 !important;
+border-radius: 8px !important;
+padding: 0;
+}
+button.accordion-button.collapsed {
+border-radius: 8px !important;
+}
+.faqs-section{
+width: 50% !important;
+@media (max-width: 767px) {
+    width: auto !important;
+}
+}
